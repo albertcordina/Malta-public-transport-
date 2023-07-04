@@ -1,0 +1,144 @@
+@font-face {
+    font-family: header;
+    src: url(./fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: fontofthepage;
+    src: url(./fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(174, 214, 239);
+}
+
+
+/* the header of the page */
+header {
+    display: flex;
+    border-bottom: 3px solid red;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightyellow;
+    color: red;
+    font-family: header;
+    font-size: 40px;
+}
+
+header img {
+    margin: 10px;
+}
+
+h1 {
+    margin: 5px;
+}
+
+
+/* the two lines under the header */
+h2 {
+    font-family: fontofthepage;
+    text-align: center;
+    color: darkblue;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: fontofthepage;
+    text-align: center;
+    color: darkblue;
+}
+
+
+/* the three pictures (bus/malta/ferry) */
+div {
+    display: flex;
+    align-content: space-between;
+    margin-top: -30px;
+    padding: 50px;
+}
+
+div section {
+    padding: 20px;
+}
+
+div section:nth-of-type(2) img {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.the2pictures p {
+    margin-top: 0px;
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    font-family: fontofthepage;
+}
+
+.the2pictures a:hover img,
+.taxi a:hover img {
+    transform: scale(1.15);
+    box-shadow: 3px 10px rgb(122, 199, 219);
+}
+
+
+/* the columns of the description about the bus and ferry */
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    text-align: center;
+    color: darkblue;
+    font-family: fontofthepage;
+    font-size: 20px;
+}
+
+.description section:nth-of-type(2) {
+    background-color: lightyellow;
+    margin-left: 50px;
+    margin-right: -80px;
+    width: 40%;
+}
+
+p a {
+    text-decoration: none;
+    color: red;
+}
+
+.description section:nth-of-type(3) {
+    background-color: lightyellow;
+    margin-right: 50px;
+    margin-left: 250px;
+    width: 40%;
+}
+
+h3:nth-of-type(2) a {
+    font-size: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h3:nth-of-type(2) {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+
+/* the taxi */
+.taxi {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: lightyellow;
+}
+
+.taxi p {
+    margin-top: 50px;
+}
+
+h3:nth-of-type(3) p {
+    margin-right: 80px;
+}
